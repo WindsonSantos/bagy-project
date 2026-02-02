@@ -1,0 +1,81 @@
+{
+  "vela_subtypes": {
+    "vela_neon_glitter_numero": {
+      "external_id_prefixes": [
+        "VEG"
+      ],
+      "notes": "Catálogo: Vela Neon Glitter. Conteúdo por embalagem varia; no CSV usar como referência para texto/SEO."
+    },
+    "vela_neon_glitter_parabens": {
+      "external_id_exact": [
+        "V237A",
+        "V237B",
+        "V237C",
+        "V237D",
+        "V237E",
+        "V237F",
+        "V237G",
+        "V237H",
+        "V237I"
+      ],
+      "notes": "Catálogo 2025: 'Vela Neon Glitter Parabéns'."
+    },
+    "vela_mini_design_numero": {
+      "external_id_prefixes": [
+        "VDE",
+        "VDW",
+        "VDS",
+        "VDX",
+        "VDY",
+        "VDZ",
+        "VDT"
+      ],
+      "size_cm": 5,
+      "notes": "Catálogo 24/25: Vela Mini Design (números) ~5cm."
+    },
+    "vela_design_numero": {
+      "external_id_prefixes": [
+        "VAD",
+        "VAP",
+        "VAO",
+        "VAR",
+        "VAV",
+        "VAY",
+        "VAA",
+        "VAB"
+      ],
+      "size_cm": 7,
+      "notes": "Catálogo 24/25: Vela Design (números) ~7cm."
+    },
+    "vela_disney_numero": {
+      "external_id_prefixes": [
+        "DVN",
+        "DVM"
+      ],
+      "size_cm": 9,
+      "notes": "Catálogo 24/25: Velas Mickey e Minnie Número ~9cm."
+    },
+    "vela_palitinho": {
+      "external_id_prefixes": [
+        "V169"
+      ],
+      "size_cm": 6,
+      "notes": "Catálogo 24/25: Vela Palitinho (lisa/espiral) ~6cm."
+    },
+    "vela_palito": {
+      "external_id_prefixes": [
+        "V0",
+        "V1"
+      ],
+      "notes": "Catálogo 24/25: várias velas 'palito' e variações; precisa refinar por nome/coleção antes de auto-preencher specs."
+    }
+  },
+  "name_rules": {
+    "vela_numero_dash": {
+      "match_regex": "^(.*)\\s+Numero\\s*-\\s*([0-9]|\\?)\\s*$",
+      "replace_pattern": "\\1 - Numero \\2",
+      "scope": "parent_rows_only",
+      "notes": "Padroniza 'Numero - X' para '- Numero X' sem mexer no restante."
+    }
+  }
+}
